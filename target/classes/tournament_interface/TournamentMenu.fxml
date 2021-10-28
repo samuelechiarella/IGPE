@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="menuImage1" fitHeight="400.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="menuImage2" fitHeight="400.0" fitWidth="200.0" layoutX="400.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="cTournamentB" layoutX="241.0" layoutY="96.0" mnemonicParsing="false" text="Create Tournament" />
+            <Button fx:id="fTournamentB" layoutX="241.0" layoutY="170.0" mnemonicParsing="false" text="Find Tournament" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
