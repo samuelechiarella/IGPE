@@ -16,8 +16,8 @@ public class TournamentMenu extends Application{
 		Scene scene = new Scene(root,400,400);
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Menù");
-		primaryStage.setMinHeight(400);
-		primaryStage.setMinWidth(400);
+		primaryStage.setMinHeight(700);
+		primaryStage.setMinWidth(700);
 		primaryStage.show();
 	}
 	

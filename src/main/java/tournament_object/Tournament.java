@@ -1,7 +1,10 @@
 package tournament_object;
 
+import java.util.List;
+
 public class Tournament {
 	
+public List<Team> team;
 public String nameTournament;
 public int sizeTournament;
 public String categoria;
@@ -16,7 +19,14 @@ public String categoria;
 	public String getNameTournament() {
 		return nameTournament;
 	}
-
+	public void addTeamOnTournament(String n,int size, String cpt)
+	{
+		team.add(new Team(n,size,cpt));
+	}
+	public void stampaPartecipanti()
+	{
+		System.out.println(team);
+	}
 	public void setNameTournament(String nameTournament) {
 		this.nameTournament = nameTournament;
 	}
