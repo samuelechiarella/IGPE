@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ImageView fx:id="menuImage1" fitHeight="400.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="menuImage2" fitHeight="400.0" fitWidth="200.0" layoutX="400.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="cTournamentB" layoutX="241.0" layoutY="96.0" mnemonicParsing="false" text="Create Tournament" />
-            <Button fx:id="fTournamentB" layoutX="241.0" layoutY="170.0" mnemonicParsing="false" text="Find Tournament" />
-         </children>
-      </Pane>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="300.0">
+               <children>
+                  <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="orgTournamentBtn" layoutX="20.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="OrganizeTournament" />
+                        <Button fx:id="orgTeamBtn" layoutX="20.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="OrganizeTeam" />
+                        <Button fx:id="browseTournamentBtn" layoutX="20.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="BrowseTournament" />
+                        <Button fx:id="homeBtn" layoutX="20.0" layoutY="20.0" maxHeight="25.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Home" textAlignment="CENTER" />
+                        <Button fx:id="profileBtn" layoutX="24.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Profile" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
 </AnchorPane>

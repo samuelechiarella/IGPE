@@ -13,11 +13,10 @@ public class TournamentMenu extends Application{
 		// TODO Auto-generated method stub
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/tournament_interface/TournamentMenu.fxml"));
 		AnchorPane root = (AnchorPane) loader.load();
-		Scene scene = new Scene(root,400,400);
+		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Menù");
-		primaryStage.setMinHeight(700);
-		primaryStage.setMinWidth(700);
+		
 		primaryStage.show();
 	}
 	
