@@ -1,7 +1,9 @@
 package tournament_object;
 
-public class Team {
+import javafx.scene.image.Image;
 
+public class Team {
+    public Image logo;
 	public String nameTeam;
 	public int teamSize;
 	public String nameLeader;

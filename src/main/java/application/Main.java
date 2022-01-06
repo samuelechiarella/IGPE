@@ -1,13 +1,13 @@
 package application;
 
-import tournament_interface.TournamentMenu;
+import tournament_interface.*;
+
 
 public class Main {
 
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TournamentMenu.main(args);
+		ChangeWindowsApplication.main(args);
 	}
 
 }
