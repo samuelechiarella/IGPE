@@ -9,10 +9,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tournament_interface.TournamentMenuController">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <center>
-            <Button fx:id="createTeamBtn" mnemonicParsing="false" onAction="#createTeam" text="Create Team" BorderPane.alignment="CENTER" />
-         </center>
-      </BorderPane>
+      <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="findTournamentBtn" layoutX="240.0" layoutY="250.0" mnemonicParsing="false" onAction="#FindTournament" text="Find Tournament" />
+            <Button fx:id="createTeamBtn" layoutX="240.0" layoutY="150.0" mnemonicParsing="false" onAction="#createTeam" text="Create Team" />
+            <Button fx:id="createTournamentBtn" layoutX="240.0" layoutY="50.0" mnemonicParsing="false" onAction="#createTournament" text="Create Tournament" />
+            <Button fx:id="myTeamBtn" layoutX="240.0" layoutY="200.0" mnemonicParsing="false" onAction="#myTeamWindow" text="My Team" />
+            <Button fx:id="myTournamentBtn" layoutX="240.0" layoutY="100.0" mnemonicParsing="false" onAction="#myTournamentWindow" text="My Tournament" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

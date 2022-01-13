@@ -12,7 +12,7 @@
          <font>
             <Font size="18.0" />
          </font></Text>
-      <TextField layoutX="404.0" layoutY="118.0" />
+      <TextField fx:id="nameTeamTxt" layoutX="404.0" layoutY="118.0" />
       <Text layoutX="431.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team Name">
          <font>
             <Font size="18.0" />
@@ -22,9 +22,10 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <ImageView fitHeight="130.0" fitWidth="136.0" layoutX="48.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="72.0" layoutY="219.0" prefHeight="121.0" prefWidth="425.0" />
-      <Button layoutX="195.0" layoutY="167.0" mnemonicParsing="false" text="Logo" />
-      <Button layoutX="520.0" layoutY="361.0" mnemonicParsing="false" text="Apply" />
+      <ImageView fx:id="logoImg" fitHeight="130.0" fitWidth="136.0" layoutX="48.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="descrizioneTxt" layoutX="72.0" layoutY="219.0" prefHeight="121.0" prefWidth="425.0" />
+      <Button fx:id="logo" layoutX="195.0" layoutY="167.0" mnemonicParsing="false" onAction="#selectLogo" text="Logo" />
+      <Button fx:id="applyBtn" layoutX="520.0" layoutY="361.0" mnemonicParsing="false" onAction="#apply" text="Apply" />
+      <Button fx:id="backBtn" layoutX="55.0" layoutY="361.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
    </children>
 </AnchorPane>

@@ -1,22 +1,33 @@
 package tournament_object;
 
+
+import java.util.List;
+
 import javafx.scene.image.Image;
 
+
 public class Team {
+	
+	public List <Team> team;
     public Image logo;
 	public String nameTeam;
-	public int teamSize;
+	public String descrizione;
 	public String nameLeader;
 	
-	public Team() {
-		
-	}
 	
-	public Team(String nameTeam,int teamSize, String nameLeader)
+	public Team(Image logo, String nameTeam,String descrizione, String nameLeader)
 	{
+		this.logo = logo;
 		this.nameTeam = nameTeam;
-		this.teamSize = teamSize;
+		this.descrizione = descrizione;
 		this.nameLeader = nameLeader; 
+		team.add(this);
+	}
+	public Image getLogo() {
+		return logo;
+	}
+	public void setName(Image logo) {
+		this.logo = logo;
 	}
 	public String getName() {
 		return nameTeam;
@@ -24,11 +35,11 @@ public class Team {
 	public void setName(String name) {
 		this.nameTeam = name;
 	}
-	public int getTeamSize() {
-		return teamSize;
+	public String getDescrizione() {
+		return descrizione;
 	}
-	public void setTeamSize(int teamSize) {
-		this.teamSize = teamSize;
+	public void setTeamSize(String descrizione) {
+		this.descrizione = descrizione;
 	}
 	public String getNameLeader() {
 		return nameLeader;
@@ -36,5 +47,11 @@ public class Team {
 	public void setNameLeader(String nameLeader) {
 		this.nameLeader = nameLeader;
 	}
+	@Override
+	public String toString() {
+		return "Team [logo=" + logo + ", nameTeam=" + nameTeam + ", descrizione=" + descrizione + ", nameLeader="
+				+ nameLeader + "]";
+	}
+ 
 
 }

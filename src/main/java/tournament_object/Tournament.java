@@ -2,12 +2,19 @@ package tournament_object;
 
 import java.util.List;
 
+import javafx.scene.chart.PieChart.Data;
+import javafx.scene.image.Image;
+
+
 public class Tournament {
 	
 public List<Team> team;
 public String nameTournament;
 public int sizeTournament;
 public String categoria;
+public Data data;
+public String descrizione;
+public String rules;
 
 	public Tournament(String nameTournament, int sizeTournament,String categoria) {
 		
@@ -19,9 +26,9 @@ public String categoria;
 	public String getNameTournament() {
 		return nameTournament;
 	}
-	public void addTeamOnTournament(String n,int size, String cpt)
+	public void addTeamOnTournament(Image img ,String n,String descrizione, String cpt)
 	{
-		team.add(new Team(n,size,cpt));
+		team.add(new Team(img,n,descrizione,cpt));
 	}
 	public void stampaPartecipanti()
 	{
